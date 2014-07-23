@@ -1,0 +1,12 @@
+extern char* cmd_list[];
+extern int cmd_size;
+extern int EXIT_STATUS;
+extern int conn_counter[LISTEN_BACKLOG];
+extern pthread_t server_s[LISTEN_BACKLOG], server_r[LISTEN_BACKLOG];
+extern char quit_str[];
+extern pthread_t in_conn_threads[LISTEN_BACKLOG];
+extern int server_sd, peer_sd[LISTEN_BACKLOG];
+extern struct sockaddr_in server_ipp;
+extern socklen_t server_ipp_mem;
+extern struct sockaddr_in peer_socket_ipp[LISTEN_BACKLOG];
+extern socklen_t peer_socket_mem[LISTEN_BACKLOG];
